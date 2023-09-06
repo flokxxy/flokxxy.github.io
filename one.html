@@ -44,10 +44,23 @@
 
 
         <img src="https://github.com/flokxxy/flokxxy.github.io/blob/main/cat1.jfif?raw=true"
-             width="360"
-             height="450"
+             width="240"
+             height="300"
              alt="kitty"
-             usemap="#">
+             usemap="#circle"
+             style="border-radius: 6px "
+        >
+
+        <!-- разобраться почему нет круга цветного-->
+
+        <map name="circle">
+            <area shape="circle"
+                  coords="14,30,60"
+                  href="https://github.com/flokxxy"
+                  alt="Круглая область"
+                  target="_blank"
+            >
+        </map>
 
 
 <h3>ФОРМЫ</h3>
@@ -72,7 +85,7 @@
             <input type="radio" name="gender" value="female"> Женский
             <input type="radio" name="gender" value="other"> Другой <br>
         </label><br>
-    <select style="border-radius: 6px ">
+    <select style="border-radius: 6px">
             <option value=""> Your favorite lenguage </option>
             <option value="1"> Pascal </option>
             <option value="2"> C </option>
