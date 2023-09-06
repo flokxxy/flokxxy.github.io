@@ -1,3 +1,10 @@
+
+html{ /*font-family - стиль текста */
+    font-family: Helvetica;
+    padding-left: 5em; /*отступ слева*/
+    /*font-size:32px;*/
+}
+
 body{
     width: 700px;
     /*font-size: 0.9rem;*/
