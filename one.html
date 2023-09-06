@@ -1,67 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title> hw1 Аванесова Виктория 24гр </title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style> body {
+        background: #eac5cc
+    </style>
 </head>
+
+
 <body>
+    <h3>
+        <font face="Mikar" size="4"> первое начало </font>
+    </h3>
 
 
-  
- <h3>СПИСОК</h3>
-  <a href="https://www.kubsu.ru/" title="Официальный сайт Кубанского государственного университета" target="_blank"> КубГУ</a>
-  <br>
-  <a href = "http://www.kubsu.ru/" target="_blank"> КубГУ_глав страница </a>
-  <p>
-      <a href = "https://htmlbook.ru/content/izobrazhenie-v-kachestve-ssylki" >
-          <img src="https://github.com/flokxxy/flokxxy.github.io/blob/main/arrow.png?raw=true"
-               width="50" height="50">
-      </a>
-      <a href = "https://htmlbook.ru/content/izobrazhenie-v-kachestve-ssylki" target="_blank">
+<h3>СПИСОК / ГИПЕРССЫЛКИ</h3>
+    <a href="https://www.kubsu.ru/"  target="_blank" title="ссылка на  КубГУ (https)"> Нажми на меня! </a>
+    <br>
+    <a href="http://www.kubsu.ru/" target="_blank" title="ссылка на  КубГУ (http)"> Нет! На меня! </a>
+    <p>
+        <a href="https://htmlbook.ru/content/izobrazhenie-v-kachestve-ssylki" >
+            <img src="https://github.com/flokxxy/flokxxy.github.io/blob/main/arrow.png?raw=true" alt="arrow" title="ссылка на сайт"
+                 width="50" height="50">
+        </a>
+        <a href="https://htmlbook.ru/content/izobrazhenie-v-kachestve-ssylki" target="_blank">
 
-      </a>
-  </p>
+        </a>
+        <!-- <a href="/ru/education"> жмяк -->
+
+        </a>
+    </p>
 
 
-
+    <a>https://example.com/ (Cсылка без href) </a><br>
+    <a href = " ">Ссылка с пустым href </a><br>
+    <a href="https://example.com" rel="noindex" title="">Ссылка запрещенная для индексации поисковиками</a><br>
+    <a href="https://example.com" rel="nofollow">Ссылка запрещенная для поисковиков</a>
 
 
 
 
 <h3>ФОРМЫ</h3>
+<form action = "/" method="POST">
+        <label>
+            Full name:
+            <input type="field-name-1" value="начальное значение">
+        </label>
+        <label>
+            <br>Phone number:
+            <input type="tel" >
+        </label>
+        <label>
+            <br>e-mail:
+            <input type="email">
+        </label><br>
+            Date of Birth: <input name="field-date" value="2023-09-04" type="date">
+            <br>
 
-      <label>
-          Full name:
-          <input type="field-name-1" value="начальное значение">
-          <br>Phone number:
-          <input type="tel" >
-          <br>e-mail:
-          <input type="email">
-          <br>
-          Date of Birth: <input name="field-date" value="2023-09-04" type="date">
-          <br>
+            Сhoose gender:
+            <input type="radio" name="gender" value="male" checked> Мужской
+            <input type="radio" name="gender" value="female"> Женский
+            <input type="radio" name="gender" value="other"> Другой <br>
+        </label><br>
+    <select>
+            <option value=""> Your favorite lenguage </option>
+            <option value="1"> Pascal </option>
+            <option value="2"> C </option>
+            <option value="3"> C++ </option>
+            <option value="4"> JavaScript </option>
+            <option value="5"> PHP </option>
+            <option value="6"> Python </option>
+            <option value="7"> Java </option>
+            <option value="8"> Haskel </option>
+            <option value="9"> Clojure </option>
+            <option value="10"> Prolog </option>
+            <option value="11"> Scala </option>
 
-          Сhoose gender:
-          <input type="radio" name="gender" value="male" checked> Мужской
-          <input type="radio" name="gender" value="female"> Женский
-          <input type="radio" name="gender" value="other"> Другой <br>
-      </label><br>
-  <select>
-          <option value=""> Your favorite lenguage </option>
-          <option value="1"> Pascal </option>
-          <option value="2"> C </option>
-          <option value="3"> C++ </option>
-          <option value="4"> JavaScript </option>
-          <option value="5"> PHP </option>
-          <option value="6"> Python </option>
-          <option value="7"> Java </option>
-          <option value="8"> Haskel </option>
-          <option value="9"> Clojure </option>
-          <option value="10"> Prolog </option>
-          <option value="11"> Scala </option>
+        </select> <br>
 
-      </select> <br>
-     <label name="Biography"  >
+
+    <label name="Biography"  >
         <br>
         Biography: <br> <textarea name="biography"> Ваша история </textarea>
     </label> <br>
@@ -69,6 +89,12 @@
 <input type="checkbox" checked="checked" > С контрактом ознакомлен(а)</input><br>
 
 <button> Сохранить </button>
+</form>
+
+
+
+
+
 
 </body>
 </html>
