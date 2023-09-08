@@ -12,10 +12,12 @@ body{
     margin: 0;
 
 }
+
 h3{
     color: darkblue;
 }
- .try{
+
+.try{
 
      color: black;
      background: rebeccapurple;
@@ -28,12 +30,41 @@ area{
 li{
     color: aliceblue;
 }
-.start{
-    /*background: palevioletred;*/
-    background-size: 100%;
-   /* height: 120px;*/
-    background-color: #e9e9e9;
-    height: 170px;
-    min-width: 1366px;
+
+
+header {
+    /*padding-left: 5em;*/
+    background-color: #b8e09d;
+    height: 100px;
+    width:150%;
+    left:50%;
+    text-align: left;
+
+}
+.header-container {
+    max-width: 1000px;
+    margin: auto;
+    left:50%;
+}
+
+.list{
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+    text-align:justify;
+}
+.help{
+    color: black;
+    height: 90px;
+}
+
+
+
+.zagolovok{
+    margin-left: 10px;
+    margin-up: 30px;
+    padding: 20px 0px 20px 0px;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
 }
 
