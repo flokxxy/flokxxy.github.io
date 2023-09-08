@@ -1,7 +1,7 @@
 
 html{ /*font-family - стиль текста */
-    font-family: Helvetica;
-    padding-left: 5em; /*отступ слева*/
+    font-family: Tahoma;
+   /* padding-left: 5em; /*отступ слева*/
     /*font-size:32px;*/
 }
 
@@ -9,13 +9,31 @@ body{
     width: 700px;
     /*font-size: 0.9rem;*/
     height: auto;
+    margin: 0;
+
+}
+h3{
+    color: darkblue;
+}
+ .try{
+
+     color: black;
+     background: rebeccapurple;
 }
 
-h3{
+area{
     color: red;
 }
-.oner{
-    background: red;
-}
 
+li{
+    color: aliceblue;
+}
+.start{
+    /*background: palevioletred;*/
+    background-size: 100%;
+   /* height: 120px;*/
+    background-color: #e9e9e9;
+    height: 170px;
+    min-width: 1366px;
+}
 
