@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="one.css"> <!--подключение css-->
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="https://flokxxy.github.io"> ссылка на начальную страницу </a>
+</body>
+</html>
