@@ -33,18 +33,9 @@
                             title = "контекстная ссылка" style=text-decoration:none; target="_blank">блинчики
   </a>(любимый рецепт)</h4></li>
   <img src="https://github.com/flokxxy/flokxxy.github.io/blob/main/cat1.jfif?raw=true"
-       width="240"
-       height="300"
-       alt="kitty"
-       usemap="#circle"
-       style="border-radius: 16px ">
+       width="240" height="300" alt="kitty" usemap="#circle" style="border-radius: 16px ">
   <map name="circle">
-    <area  shape="circle"
-           coords="150,150,50"
-           href="https://github.com/flokxxy"
-           alt="Круглая область"
-    >
-  </map>
+    <area  shape="circle" coords="150,150,50" href="https://github.com/flokxxy" alt="Круглая область"></map>
   <img src="https://github.com/flokxxy/flokxxy.github.io/blob/main/like.png?raw=true"
        width="230"
        height="210"
@@ -60,7 +51,7 @@
           alt="Квадратная область"
     >
   </map><br>
-  <a href="https://yandex.ru/search/?text=столица+краснодарского+края&lr=35&clid=2456107&src=suggest_B" title="ссылка с тремя параметрами в URL"> Столица краснодарскогок края </a>
+  <a href="https://yandex.ru/search/?text=столица+краснодарского+края&lr=35&clid=2456107&src=suggest_B" title="ссылка с тремя параметрами в URL">Столица краснодарскогок края</a>
 
 
 
@@ -106,10 +97,6 @@
   <li></li>
 </ol>
 
-
-
-
-
 <h3 id="forms">ФОРМЫ</h3>
 <form action = "/" method="POST">
   <label>
@@ -124,50 +111,60 @@
     <br>e-mail:
     <input name="field-email" type="email">
   </label><br>
-  Date of Birth: <input name="field-date" value="2023-09-04" type="date">
-  <br>
+  Date of Birth: <label>
+  <input name="field-date" value="2023-09-04" type="date"></input>
+</label><br>
 
   Сhoose gender:
-  <input type="radio" name="gender" value="male" checked> Мужской
-  <input type="radio" name="gender" value="female"> Женский
-  <input type="radio" name="gender" value="other"> Другой <br>
+  <label>
+    <input type="radio" name="gender" value="male" checked>Мужской
+    <input type="radio" name="gender" value="female">Женский
+    <input type="radio" name="gender" value="other">Другой
   </label><br>
-  <select  name="field-name-4"  style="border-radius: 6px" multiple="multiple">
-    <option value=""> Your favorite language </option>
-    <option value="1"> Pascal </option>
-    <option value="2"> C </option>
-    <option value="3"> C++ </option>
-    <option value="4"> JavaScript </option>
-    <option value="5"> PHP </option>
-    <option value="6"> Python </option>
-    <option value="7"> Java </option>
-    <option value="8"> Haskel </option>
-    <option value="9"> Clojure </option>
-    <option value="10"> Prolog </option>
-    <option value="11"> Scala </option>
-  </select> <br>
-  <select  name="field-name-4"  style="border-radius: 6px" >
-    <option value=""> Your favorite language </option>
-    <option value="1"> Pascal </option>
-    <option value="2"> C </option>
-    <option value="3"> C++ </option>
-    <option value="4"> JavaScript </option>
-    <option value="5"> PHP </option>
-    <option value="6"> Python </option>
-    <option value="7"> Java </option>
-    <option value="8"> Haskel </option>
-    <option value="9"> Clojure </option>
-    <option value="10"> Prolog </option>
-    <option value="11"> Scala </option>
-  </select> <br>
+  <label>
+    <select name="field-name-4" style="border-radius: 6px" multiple="multiple">
+      <option value=""> Your favorite language</option>
+      <option value="1"> Pascal</option>
+      <option value="2"> C</option>
+      <option value="3"> C++</option>
+      <option value="4"> JavaScript</option>
+      <option value="5"> PHP</option>
+      <option value="6"> Python</option>
+      <option value="7"> Java</option>
+      <option value="8"> Haskel</option>
+      <option value="9"> Clojure</option>
+      <option value="10"> Prolog</option>
+      <option value="11"> Scala</option>
+    </select>
+
+  </label> <br>
+  <label>
+    <select name="field-name-4" style="border-radius: 6px">
+      <option value=""> Your favorite language</option>
+      <option value="1"> Pascal</option>
+      <option value="2"> C</option>
+      <option value="3"> C++</option>
+      <option value="4"> JavaScript</option>
+      <option value="5"> PHP</option>
+      <option value="6"> Python</option>
+      <option value="7"> Java</option>
+      <option value="8"> Haskel</option>
+      <option value="9"> Clojure</option>
+      <option value="10"> Prolog</option>
+      <option value="11"> Scala</option>
+    </select>
+
+  </label> <br>
 
 
-  <label name="Biography"  >
+  <label>
     <br>
     Biography: <br> <textarea name="biography"> Ваша история </textarea>
   </label> <br>
 
-  <input type="checkbox" checked="checked" > С контрактом ознакомлен(а)</input><br>
+  <label>
+    <input type="checkbox" checked="checked" >
+  </label> С контрактом ознакомлен(а)><br>
 
   <button> Сохранить </button>
   <input type="submit" value="Отправить" />
