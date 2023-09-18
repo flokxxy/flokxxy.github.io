@@ -1,7 +1,27 @@
 
-header{
-    width:100%;
-    background: cadetblue;
-    height: 70px;
-    background: "task2/kopibara.svgz";
+body{
+    margin: 0;
 }
+
+header,footer {
+    background-color: #a4bebe;
+    height: 70px;
+    padding: 10px;
+}
+
+.logo{
+    height: 67px;
+    margin-right: 10px;
+    float: left;
+}
+
+nav{
+    position: absolute;
+    top:10px;
+    right: 50px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
