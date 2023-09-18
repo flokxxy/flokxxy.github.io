@@ -4,15 +4,11 @@ body{
     background-color: antiquewhite;
     font-family: Tahoma;
 }
-main{
-
-}
 
 header {
     background-color: #a4bebe;
     height: 70px;
     padding: 15px;
-
 }
 
 .logo{
@@ -36,7 +32,11 @@ nav{
     margin: 0;
 }
 
+audio{
+    position: absolute;
 
+    right: 50px;
+}
 
 
 /*о таблице*/
@@ -71,6 +71,12 @@ table {
 
 /*о ссылках*/
 
+.list{
+    color: #520327;
+}
+
+
+
 a{
     text-decoration:none;
 }
@@ -83,8 +89,18 @@ a.link:visited{
 }
 a.link:focus{
     color: #f80101;
-
 }
+a.list:visited{
+    color: #520327;
+}
+a.list:focus{
+    color: #f80101;
+}
+a:hover {/*наведение на ссылку*/
+     border-bottom: 1px solid;
+}
+
+
 
 /*формы*/
 
