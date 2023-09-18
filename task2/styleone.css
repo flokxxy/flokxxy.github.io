@@ -1,8 +1,12 @@
+*{
+    font-family: Tahoma, serif;
+}
+
 body{
     margin: 0;
     background-position: left;
     background-color: antiquewhite;
-    font-family: Tahoma;
+
 }
 
 header {
@@ -121,15 +125,16 @@ a:hover {/*наведение на ссылку*/
     background-color: rgba(236, 197, 204, 0.8);
 }
 
-
-
-
 footer{
     margin: 0;
     height: 90px;
     background-color: #a4bebe;
 
 }
+.pod{
+    padding: 10px;
+}
+
 
 
 
