@@ -1,27 +1,40 @@
 
 body{
-    margin: 0;
+  margin: 0;
+  background-position: left;
+}
+main{
+
 }
 
 header,footer {
-    background-color: #a4bebe;
-    height: 70px;
-    padding: 10px;
+  background-color: #a4bebe;
+  height: 70px;
+  padding: 10px;
+
 }
 
 .logo{
-    height: 67px;
-    margin-right: 10px;
-    float: left;
+  height: 67px;
+  margin-right: 10px;
+  float: left;
 }
 
+.yy{
+  position: absolute;
+  top:10px;
+  right: 50px;
+}
 nav{
-    position: absolute;
-    top:10px;
-    right: 50px;
+
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 table, th, td {
-    border: 1px solid black;
+  border: 1px solid black;
 }
-
+div.topp{
+  max-width: 960px;
+  margin: 0 auto;
+}
