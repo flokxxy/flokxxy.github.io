@@ -1,40 +1,113 @@
-
 body{
-  margin: 0;
-  background-position: left;
+    margin: 0;
+    background-position: left;
+    background-color: antiquewhite;
+    font-family: Tahoma;
 }
 main{
 
 }
 
-header,footer {
-  background-color: #a4bebe;
-  height: 70px;
-  padding: 10px;
+header {
+    background-color: #a4bebe;
+    height: 70px;
+    padding: 15px;
 
 }
 
 .logo{
-  height: 67px;
-  margin-right: 10px;
-  float: left;
+    height: 67px;
+    margin-right: 10px;
+    float: left;
 }
 
 .yy{
-  position: absolute;
-  top:10px;
-  right: 50px;
+    position: absolute;
+    top:10px;
+    right: 50px;
 }
 nav{
-
-  max-width: 960px;
-  margin: 0 auto;
+    max-width: 960px;
+    margin: 0 auto;
 }
+
+#contact{
+    font-size: 20px;
+    margin: 0;
+}
+
+
+
+
+/*о таблице*/
 
 table, th, td {
-  border: 1px solid black;
+    border: 1px solid #a4bebe  ;
 }
-div.topp{
-  max-width: 960px;
-  margin: 0 auto;
+
+
+
+.topp{
+    max-width: 960px;
+    margin: 0 auto;
 }
+table {
+    color: #1c1717;
+    border: 5px solid #a4bebe;
+    width: 500px;
+
+}
+
+.nechet{
+    color: #3d0116;
+    background-color: rgba(210, 218, 183, 0.89);
+}
+.chet{
+    color: #1c1717;
+    background-color: rgb(234, 197, 204);
+}
+
+
+
+/*о ссылках*/
+
+a{
+    text-decoration:none;
+}
+a.link{
+    color: #000;
+    text-decoration: #7881c0;
+}
+a.link:visited{
+    color: #520327;
+}
+a.link:focus{
+    color: #f80101;
+
+}
+
+/*формы*/
+
+.lab{
+    border-radius: 7px;
+    border-color: #3d0116;
+}
+
+.shin{
+
+}
+
+.button{
+    box-shadow:2px 2px 4px #520327;
+
+}
+
+footer{
+    margin: 0;
+    height: 90px;
+    background-color: #a4bebe;
+}
+
+
+
+
