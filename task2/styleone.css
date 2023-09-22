@@ -6,7 +6,6 @@ body{
     margin: 0;
     background-position: left;
     background-color: antiquewhite;
-
 }
 
 header {
@@ -60,6 +59,9 @@ table {
     border: 5px solid #a4bebe;
     width: 500px;
     border-radius: 7px;
+
+    border-spacing: 0;
+    border-collapse: collapse;
 }
 
 .nechet{
@@ -134,9 +136,9 @@ footer{
 .pod{
     padding: 10px;
 }
-
 iframe{
  border: none;
+
 }
 
 
