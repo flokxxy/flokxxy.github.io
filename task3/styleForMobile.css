@@ -1,3 +1,20 @@
+html{
+    background-color: #3d0116;
+}
+header{
+    background:url("https://github.com/flokxxy/flokxxy.github.io/blob/d98064e1431dfdd270a48cac7fc706722941cfe8/task3/%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B0.jfif?raw=true") ;
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+#f{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+
+}
+
 .logo{
     height: 67px;
     margin-right: 10px;
@@ -5,7 +22,7 @@
 }
 /* Стили по умолчанию для мобильных устройств */
 .grid-container-flex {
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
     background-color: rgba(236, 197, 204, 0.8);
     font-size: 0.9rem;
@@ -15,16 +32,17 @@
 }
 
 .table-flex {
-    display: flex;
+   /* display: flex;*/
     flex-direction: column;
     background-color: rgba(236, 197, 204, 0.8);
     font-size: 0.9rem;
     color: #1c1717;
     margin-top: 1rem;
     height: auto;
+    align-items:center;
 }
 .link-flex {
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
     background-color: rgba(236, 197, 204, 0.8);
     font-size: 0.9rem;
@@ -33,27 +51,37 @@
     height: auto;
 }
 .form-flex {
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
     background-color: rgba(236, 197, 204, 0.8);
     font-size: 0.9rem;
     color: #1c1717;
     margin-top: 1rem;
     height: auto;
+
+
 }
 
 /* Медиа запрос для настольных компьютеров */
-@media (min-width: 1024px) {
+@media (min-width: 960px) {
     .table-flex {
         font-size: 2rem;
+        /*grid-template-columns: none;*/
+
     }
 
     .link-flex {
-        grid-template-columns: none;
-        height: 12em;
+      /* grid-template-columns: none;*/
+        height: auto;
+    }
+    .navigashin{
+        font-size: 20px;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
 }
+
 img {
     max-width: 100%;
     height: auto;
@@ -62,4 +90,9 @@ img {
 
 .navigashin{
     font-size: 12px;
+    display: flex;
+    flex-direction: column;
 }
+
+
+
