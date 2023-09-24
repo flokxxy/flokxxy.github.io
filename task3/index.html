@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styleForMobile.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lab3</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="https://github.com/flokxxy/flokxxy.github.io/blob/bb33f383a2698e7fa06afe3b69f836cdb2d2a000/task2/images/KAPPPP.png?raw=true" alt="капибара">
+        <h1>  название сайта  </h1>
+    </header>
+    <main>
+        <nav class="navigashin">
+            <a class="link" href="#contact" title="ЯКОРЬ" >ПЕРЕЙТИ К КОНТАКТАМ</a>
+            <a class="link" href="#forms" title="ЯКОРЬ" >ПЕРЕЙТИ К ФОРМАМ</a>
+            <a class="link" href="#tables" title="ЯКОРЬ" >ПЕРЕЙТИ К ТАБЛИЦЕ</a>
+        </nav>
+        <section class="grid-container-flex">
+            что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.
+            что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.
+            что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.что-то.
+        </section>
+        <section class="table-flex">
+                <h4 class="list" id="tables"> ТАБЛИЧКА </h4>
+                <table id = "1"  >
+                    <tr class="chet">
+                        <td colspan="4" > ЗАГАЛОВОК </td>
+                    </tr>
+                    <tr class="nechet">
+                        <th >Колона 1</th>
+                        <th>Колона 2</th>
+                        <th>Колона 3</th>
+                        <th>Колона 4</th>
+                    </tr>
+                    <tbody>
+                    <tr class="chet">
+                        <td colspan="4">Объединение всех</td>
+                    </tr>
+                    <tr class="nechet">
+                        <td colspan="2">Объединение 2ух</td>
+                        <td colspan="2">Объединение 2ух</td>
+                    </tr>
+                    <tr class="chet">
+                        <td rowspan="2">7</td>
+                        <td>8</td>
+                        <td rowspan="3">14</td>
+                        <td>8</td>
+
+                    </tr>
+                    <tr class="nechet">
+                        <td>10</td>
+                        <td>11</td>
+                    </tr>
+                    <tr class="chet">
+                        <td>13</td>
+                        <td>15</td>
+                        <td>9</td>
+                    </tr>
+                    </tbody>
+                </table>
+        </section>
+        <section class="links-flex">
+            <p>links</p>
+
+        </section>
+        <section class="forms-flex">
+                <h4 class="list" id="forms">ФОРМЫ</h4>
+                <form action = "/" method="POST">
+                    <label>
+                        Full name:
+                        <input class="lab" type="text" value="начальное значение">
+                    </label>
+                    <label>
+                        <br>Phone number:
+                        <input class="lab" type="tel" >
+                    </label>
+                    <label>
+                        <br>e-mail:
+                        <input class="lab" name="field-email" type="email">
+                    </label><br>
+                    Date of Birth: <label>
+                    <input class="lab" name="field-date" value="2023-09-24" type="date">
+                </label><br>
+
+                    Choose gender:
+                    <label>
+                        <input type="radio" name="gender" value="male" checked>Мужской
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female">Женский
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="other">Другой
+                    </label><br>
+                    <label>
+                        <select name="field-name-4" multiple="multiple">
+                            <option value=""> Your favorite language</option>
+                            <option value="1"> Pascal</option>
+                            <option value="2"> C</option>
+                            <option value="3"> C++</option>
+                            <option value="4"> JavaScript</option>
+                            <option value="5"> PHP</option>
+                            <option value="6"> Python</option>
+                            <option value="7"> Java</option>
+                            <option value="8"> Haskel</option>
+                            <option value="9"> Clojure</option>
+                            <option value="10"> Prolog</option>
+                            <option value="11"> Scala</option>
+                        </select>
+
+                    </label> <br>
+                    <label>
+                        <select class="lab" name="field-name-4">
+                            <option value=""> Your favorite language</option>
+                            <option value="1"> Pascal</option>
+                            <option value="2"> C</option>
+                            <option value="3"> C++</option>
+                            <option value="4"> JavaScript</option>
+                            <option value="5"> PHP</option>
+                            <option value="6"> Python</option>
+                            <option value="7"> Java</option>
+                            <option value="8"> Haskel</option>
+                            <option value="9"> Clojure</option>
+                            <option value="10"> Prolog</option>
+                            <option value="11"> Scala</option>
+                        </select>
+
+                    </label> <br>
+
+
+                    <label>
+                        <br>
+                        Biography: <br> <textarea class="lab" name="biography"> Ваша история </textarea>
+                    </label> <br>
+
+                    <label>
+                        <input type="checkbox" checked="checked" >
+                    </label> С контрактом ознакомлен(а)><br>
+
+                    <button class="button" > Сохранить </button>
+                    <input class="button" type="submit" value="Отправить" />
+                </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+
+</body>
+</html>
