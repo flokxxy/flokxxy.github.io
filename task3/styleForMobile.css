@@ -1,0 +1,36 @@
+.logo{
+    height: 67px;
+    margin-right: 10px;
+    float: left;
+}
+.grid-container-flex {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(236, 197, 204, 0.8);
+    font-size: 1rem;
+    color: #1c1717;
+    margin-top: 10px;
+    height: auto;
+}
+.table-flex {
+     display: flex;
+     flex-direction: column;
+     background-color: rgba(236, 197, 204, 0.8);
+     font-size: 1rem;
+     color: #1c1717;
+     margin-top: 10px;
+     height: auto;
+ }
+.link-flex {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(236, 197, 204, 0.8);
+    font-size: 1rem;
+    color: #1c1717;
+    margin-top: 1px;
+    height: 7em;
+}
+
+.navigashin{
+    font-size: 12px;
+}
