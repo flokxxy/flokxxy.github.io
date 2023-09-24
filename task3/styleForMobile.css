@@ -3,6 +3,7 @@
     margin-right: 10px;
     float: left;
 }
+/* Стили по умолчанию для мобильных устройств */
 .grid-container-flex {
     display: flex;
     flex-direction: column;
@@ -10,9 +11,9 @@
     font-size: 0.9rem;
     color: #1c1717;
     margin-top: 1rem;
-    height: 9em;
+    height: auto;
 }
-/* Стили по умолчанию для мобильных устройств */
+
 .table-flex {
     display: flex;
     flex-direction: column;
@@ -20,8 +21,8 @@
     font-size: 0.9rem;
     color: #1c1717;
     margin-top: 1rem;
-    height: 9em;
- }
+    height: auto;
+}
 .link-flex {
     display: flex;
     flex-direction: column;
@@ -29,7 +30,7 @@
     font-size: 0.9rem;
     color: #1c1717;
     margin-top: 1rem;
-    height: 9em;
+    height: auto;
 }
 .form-flex {
     display: flex;
@@ -38,7 +39,7 @@
     font-size: 0.9rem;
     color: #1c1717;
     margin-top: 1rem;
-    height: 9em;
+    height: auto;
 }
 
 /* Медиа запрос для настольных компьютеров */
@@ -51,8 +52,13 @@
         grid-template-columns: none;
         height: 12em;
     }
-}
 
+}
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
 
 .navigashin{
     font-size: 12px;
