@@ -1,65 +1,125 @@
+html{
+  background-color: #3d0116;
+  width: auto;
+  height: auto;
+  flex-shrink: 0;
+}
+header{
+  background:url("https://github.com/flokxxy/flokxxy.github.io/blob/d98064e1431dfdd270a48cac7fc706722941cfe8/task3/%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B0.jfif?raw=true") ;
+  max-width: 100%;
+  height: auto;
+  /*width: auto\9; /* ie8 */
+  width: 100%;
+  position: fixed;
+}
+
+#nameweb{
+  flex-grow: 4;
+  padding: 5px 5px 5px 5px;
+  width: 372px;
+  height: 57px;
+  flex-shrink: 0;
+  align-self:flex-end;
+  text-align: right;
+}
 .logo{
-    height: 67px;
-    margin-right: 10px;
-    float: left;
+  flex-grow:1;
+  height: 92px;
+  width: 92px;
+  padding: 8px 8px 8px 8px;
+  margin-right: 10px;
+  float: left;
+  position: absolute;
+}
+.flex1{
+  display: flex;
+}
+.flex2, flex3{
+  display: flex;
+  flex-direction: column;
 }
 /* Стили по умолчанию для мобильных устройств */
-.grid-container-flex {
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(236, 197, 204, 0.8);
-    font-size: 0.9rem;
-    color: #1c1717;
-    margin-top: 1rem;
-    height: auto;
-}
 
-.table-flex {
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(236, 197, 204, 0.8);
-    font-size: 0.9rem;
-    color: #1c1717;
-    margin-top: 1rem;
-    height: auto;
- }
 .link-flex {
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(236, 197, 204, 0.8);
-    font-size: 0.9rem;
-    color: #1c1717;
-    margin-top: 1rem;
-    height: auto;
+
+  background-color: rgba(236, 197, 204, 0.8);
+  font-size: 0.9rem;
+  color: #1c1717;
+  margin-top: 1rem;
+  height: auto;
 }
 .form-flex {
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(236, 197, 204, 0.8);
-    font-size: 0.9rem;
-    color: #1c1717;
-    margin-top: 1rem;
-    height: auto;
+  display: flex;
+  background-color: rgba(236, 197, 204, 0.8);
+  font-size: 0.9rem;
+  color: #1c1717;
+  margin-top: 1rem;
+  height: auto;
 }
-
-/* Медиа запрос для настольных компьютеров */
-@media (min-width: 1024px) {
-    .table-flex {
-        font-size: 2rem;
-    }
-
-    .link-flex {
-        grid-template-columns: none;
-        height: 12em;
-    }
-
+.table-flex {
+  order: -1;
+  background-color: rgba(236, 197, 204, 0.8);
+  font-size: 0.9rem;
+  color: #1c1717;
+  margin-top: 1rem;
+  /*height: auto;*/
+  align-items:center;
 }
 img {
-    max-width: 100%;
-    height: auto;
-    width: auto\9; /* ie8 */
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
 }
 
 .navigashin{
-    font-size: 12px;
+  background: #888888;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end ;
+  position: fixed;
+  margin: 10px 100px;
 }
+
+
+/* Медиа запрос для настольных компьютеров */
+@media (min-width: 960px) {
+
+  html{
+    background-color: #3d0116;
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  .table-flex {
+    font-size: 2rem;
+    /*grid-template-columns: none;*/
+    order: 0;
+
+  }
+
+  .link-flex {
+    /* grid-template-columns: none;*/
+    height: auto;
+  }
+  .navigashin{
+    display: flex;
+    font-size: 20px;
+    flex-flow: row;
+    background: #222222;
+  }
+  .link{
+    display: flex;
+  }
+  #nameweb{
+    width: 246px;
+    height: 50px;
+    flex-shrink: 0;
+  }
+
+}
+
+
+
+
