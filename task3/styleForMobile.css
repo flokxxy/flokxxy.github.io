@@ -1,9 +1,11 @@
 html{
-    background-color: #3d0116;
     width: auto;
     height: auto;
     flex-shrink: 0;
     margin: 0;
+}
+.background{
+    background-color: #a4bebe;
 }
 header{
     background-color: #7881c0;
@@ -71,7 +73,7 @@ img {
 }
 
 .navigashin{
-    background: #888888;
+   background: #eac5cc;
     font-size: 12px;
     flex-flow: row wrap;
     display: flex;
@@ -116,7 +118,7 @@ img {
         display: flex;
         font-size: 20px;
         flex-flow: row;
-        background: #222222;
+        background: #eac5cc;
         margin: 0;
         right: 5px;
         top: 5px;
