@@ -83,7 +83,9 @@ img {
     justify-content:flex-end ;
 }
 
-
+th, td {
+   border: 1px solid grey;
+}
 
 /* Медиа запрос для настольных компьютеров */
 @media (min-width: 960px) {
