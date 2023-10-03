@@ -1,0 +1,60 @@
+html{
+    width: auto;
+    height: auto;
+
+}
+.root {
+    background-color: rgba(236, 197, 204, 0.8);
+}
+
+header {
+    background-color: rgba(210, 218, 183, 0.89);
+}
+
+footer {
+    background-color: rgba(236, 197, 204, 0.8);
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #0f0f0f;
+    transition: 0.25s ease;
+}
+
+.nav-item:hover {
+    color: white;
+    transition: 0.25s ease;
+}
+
+.block {
+    background: #a4bebe;
+    width:100%;
+}
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 3px solid rgb(28, 23, 23);
+    width: 95%;
+}
+
+th {
+    border: 1px solid rgba(210, 218, 183, 0.89);
+}
+
+td {
+    border: 1px solid #c08095;
+}
+
+.chet-item {
+    background-color: #eac5cc;
+}
+
+.nav-item-wraper {
+    text-align: center;
+}
