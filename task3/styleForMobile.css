@@ -96,6 +96,9 @@ th, td {
         height: auto;
         flex-shrink: 0;
     }
+     body{
+        margin: 0;
+    }
 
     .table-flex {
 
