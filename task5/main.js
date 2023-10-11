@@ -19,7 +19,7 @@ function calculateCost() {
 
   // Проверяем, что количество введено корректно
   if (isNaN(quantity) || quantity <= 0) {
-    resultOutput.textContent = "Введите корректное количество котиков";
+    resultOutput.textContent = "Введите корректное количество раз";
     return;
   }
 
@@ -27,7 +27,7 @@ function calculateCost() {
   var totalCost = selectedProduct.price * quantity;
 
   // Выводим результат
-  resultOutput.textContent = "Количество поглаживаний: " + totalCost + " гладинья";
+  resultOutput.textContent = "Стоимость: " + totalCost + " рублей";
 }
 
 // Назначаем обработчик события на кнопку подсчета стоимости
