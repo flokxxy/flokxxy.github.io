@@ -2,7 +2,8 @@
 var products = [
   { name: "котик 1", price: 10 },
   { name: "котик 2", price: 15 },
-  { name: "котик 3", price: 20 }
+  { name: "котик 3", price: 20 },
+  { name: "котик 4", price: 100 }
 ];
 
 // Получаем элементы DOM
