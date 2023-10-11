@@ -1,8 +1,8 @@
 // Создаем массив с товарами и их ценами
 var products = [
-  { name: "Товар 1", price: 100 },
-  { name: "Товар 2", price: 200 },
-  { name: "Товар 3", price: 300 }
+  { name: "котик 1", price: 10 },
+  { name: "котик 2", price: 15 },
+  { name: "котик 3", price: 20 }
 ];
 
 // Получаем элементы DOM
@@ -19,7 +19,7 @@ function calculateCost() {
 
   // Проверяем, что количество введено корректно
   if (isNaN(quantity) || quantity <= 0) {
-    resultOutput.textContent = "Введите корректное количество товара";
+    resultOutput.textContent = "Введите корректное количество котиков";
     return;
   }
 
@@ -27,7 +27,7 @@ function calculateCost() {
   var totalCost = selectedProduct.price * quantity;
 
   // Выводим результат
-  resultOutput.textContent = "Стоимость заказа: " + totalCost + " рублей";
+  resultOutput.textContent = "Количество поглаживаний: " + totalCost + " гладинья";
 }
 
 // Назначаем обработчик события на кнопку подсчета стоимости
