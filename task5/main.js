@@ -20,7 +20,7 @@ function calculateCost() {
 
     // Проверка корректности ввода данных с помощью регулярного выражения
     var regex = /^[0-9]+$/;
-    if (!regex.test(quantity)) {
+    if (!regex.test(quantity.value)) {
         resultOutput.textContent = "Ошибка: Недопустимые символы в поле количества товара";
         return;
     }
