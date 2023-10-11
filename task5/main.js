@@ -14,7 +14,7 @@ var resultOutput = document.getElementById("result");
 
 // Функция для подсчета стоимости заказа
 function calculateCost() {
-    // Получаем выбранный товар и количество
+   // Получаем выбранный товар и количество
     var selectedProduct = products[productSelect.selectedIndex];
     var quantity = quantityInput.value;
 
