@@ -3,32 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="root">
 
 
-  <header>
     <!-- тут будет шапка ПОТОМ -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 d-flex justify-content-md-start justify-content-between align-items-center">
+            <img src="https://github.com/flokxxy/flokxxy.github.io/blob/bb33f383a2698e7fa06afe3b69f836cdb2d2a000/task2/images/KAPPPP.png?raw=true" alt="Логотип" class="logo">
+            <h5 class="name-project m-0">Cайт для lab5</h5>
+          </div>
+          <div class="col-12 col-md-8 d-flex justify-content-md-end flex-column justify-content-center align-items-center flex-md-row">
+          </div>
+        </div>
+      </div>
+    </header>
 
-      <img class="logo" src="https://github.com/flokxxy/flokxxy.github.io/blob/bb33f383a2698e7fa06afe3b69f836cdb2d2a000/task2/images/KAPPPP.png?raw=true" alt="капибара">
-      <h1 id="nameweb">  Cайт для lab3  </h1>
-  </header>
 
+    <div >
+      <img src="https://github.com/flokxxy/flokxxy.github.io/blob/ab7264e0a3843610293ff512b67f653588d61ec3/task2/catt.jfif?raw=true"
+           class="imgHref w-25"
+           style="border-radius: 16px "
+           width="150">
+      <img src="https://github.com/flokxxy/flokxxy.github.io/blob/ab7264e0a3843610293ff512b67f653588d61ec3/task2/cat2.jfif?raw=true"
+           class="imgHref w-25"
+           style="border-radius: 16px "
+           width="199">
+      <img src="https://github.com/flokxxy/flokxxy.github.io/blob/ab7264e0a3843610293ff512b67f653588d61ec3/task2/cat3.jpg?raw=true"
+           class="imgHref w-25"
+           style="border-radius: 16px "
+           width="201">
+    </div>
+
+
+    <h5> Выбери котика какого котика будешь глдаить</h5>
   <main class="col">
     <!--калькулятор-->
 
 
-    <label for="quantity">Количество товара:</label>
+    <label for="quantity">Количество поглаживаний котика:</label>
     <input type="text" id="quantity">
 
-    <label for="product">Выберите товар:</label>
+    <label for="product">Выберите котика:</label>
     <select id="product">
-      <option value="0">Товар 1</option>
-      <option value="1">Товар 2</option>
-      <option value="2">Товар 3</option>
+      <option value="0">котик 1</option>
+      <option value="1">котик 2</option>
+      <option value="2">котик 3</option>
     </select>
 
-    <button id="calculate">Подсчитать стоимость</button>
+    <button id="calculate">Подсчитать сколько раз гладить</button>
 
     <p id="result"></p>
 
