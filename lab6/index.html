@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>lab5</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body class="root">
+
+
+<!-- тут будет шапка ПОТОМ -->
+<header>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 col-md-4 d-flex justify-content-md-start justify-content-between align-items-center">
+        <img src="https://github.com/flokxxy/flokxxy.github.io/blob/bb33f383a2698e7fa06afe3b69f836cdb2d2a000/task2/images/KAPPPP.png?raw=true" alt="Логотип" class="logo">
+        <h5 class="name-project m-0">Cайт для lab5</h5>
+      </div>
+      <div class="col-12 col-md-8 d-flex justify-content-md-end flex-column justify-content-center align-items-center flex-md-row">
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<div class="container p-0">
+  <div class="row">
+    <div class="col-12 col-md-10 mx-auto d-flex flex-row justify-content-center align-items-center">
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <img src="https://github.com/flokxxy/flokxxy.github.io/blob/ab7264e0a3843610293ff512b67f653588d61ec3/task2/catt.jfif?raw=true"
+             class="mx-auto d-block"
+             style="border-radius: 16px "
+             width="150">
+        <p class="text-center"> 10 рублей за 1 раз</p>
+      </div>
+      <div class=" flex-column justify-content-center align-items-center" >
+        <img src="https://github.com/flokxxy/flokxxy.github.io/blob/ab7264e0a3843610293ff512b67f653588d61ec3/task2/cat2.jfif?raw=true"
+             class="mx-auto d-block"
+             style="border-radius: 16px "
+             width="199">
+        <p class="text-center"> 15 рублей за 1 раз</p>
+      </div>
+      <div class=" flex-column justify-content-center align-items-center">
+        <img src="https://github.com/flokxxy/flokxxy.github.io/blob/ab7264e0a3843610293ff512b67f653588d61ec3/task2/cat3.jpg?raw=true"
+             class="mx-auto d-block"
+             style="border-radius: 16px "
+             width="201">
+        <p class="text-center"> 20 рублей за 1 раз</p>
+      </div>
+      <div class=" flex-column justify-content-center align-items-center">
+        <img src=" https://github.com/flokxxy/flokxxy.github.io/blob/d73df68344ded0e80d822704722f6bc6c3797d14/task5/cat4.jfif?raw=true"
+             class="mx-auto d-block"
+             style="border-radius: 16px "
+             width="160">
+        <p class="text-center"> 100 рублей за 1 раз</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<h1>Калькулятор стоимости услуги</h1>
+
+<label for="quantity">Количество:</label>
+<input type="number" id="quantity" min="1" value="1" onchange="calculatePrice()"><br><br>
+
+<label>Тип услуги:</label><br>
+<input type="radio" name="serviceType" value="type1" onchange="calculatePrice()" checked> Тип 1<br>
+<input type="radio" name="serviceType" value="type2" onchange="calculatePrice()"> Тип 2<br>
+<input type="radio" name="serviceType" value="type3" onchange="calculatePrice()"> Тип 3<br><br>
+
+<label for="option">Опция товара:</label>
+<select id="option" onchange="calculatePrice()">
+  <option value="option1">Опция 1</option>
+  <option value="option2">Опция 2</option>
+</select><br><br>
+
+<label for="property">Свойство товара:</label>
+<input type="checkbox" id="property" onchange="calculatePrice()"><br><br>
+
+<div id="price">Цена: 0 руб.</div>
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md d-flex flex-column justify-content-center align-items-center">
+        <a id="bottom"></a>
+        <p class="m-0">Аванесова Виктория 24гр</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="main.js" defer> </script>
+</body>
+</html>
