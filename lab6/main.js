@@ -26,9 +26,13 @@ function calculatePrice() {
     price = 25 * quantity;
     price += property ? 15 : 0;
     price += option === "option1" ? 5 : 0;
+    price += option === "option2" ? 12 : 0;
+    price += option === "option3" ? 18 : 0;
   } else if (serviceType === "type5") {
     price = 40 * quantity+quantity*25;
-    price += option === "option2" ? 15 : 0;
+    price += option === "option1" ? 5 : 0;
+    price += option === "option2" ? 12 : 0;
+    price += option === "option3" ? 18 : 0;
     price += property ? 15 : 0;
   }
 
