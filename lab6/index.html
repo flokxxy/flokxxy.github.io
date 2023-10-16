@@ -35,61 +35,68 @@
         <img src="https://github.com/flokxxy/flokxxy.github.io/blob/ab7264e0a3843610293ff512b67f653588d61ec3/task2/catt.jfif?raw=true"
              class="mx-auto d-block"
              style="border-radius: 16px "
-             width="150" alt="cat1">
+             width="150">
         <p class="text-center"> 10 рублей за 1 раз</p>
       </div>
       <div class=" flex-column justify-content-center align-items-center" >
         <img src="https://github.com/flokxxy/flokxxy.github.io/blob/ab7264e0a3843610293ff512b67f653588d61ec3/task2/cat2.jfif?raw=true"
              class="mx-auto d-block"
              style="border-radius: 16px "
-             width="199" alt="cat2">
+             width="199">
         <p class="text-center"> 15 рублей за 1 раз</p>
       </div>
       <div class=" flex-column justify-content-center align-items-center">
         <img src="https://github.com/flokxxy/flokxxy.github.io/blob/089e0f33cb771408e89c5acc14ec9bbd97051c9e/lab6/15%20Dog%20Posts%20From%20This%20Week%20That'll%20Make%20Your%20Day%20Soooo%20Much%20Better.jpg?raw=true"
              class="mx-auto d-block"
              style="border-radius: 16px "
-             width="201" alt="dog1">
+             width="201">
         <p class="text-center"> 20 рублей за 1 раз</p>
       </div>
       <div class=" flex-column justify-content-center align-items-center">
         <img src="https://github.com/flokxxy/flokxxy.github.io/blob/3937943af788e24d463ae71b239ef062f386c1f0/lab6/%20.jpg?raw=true"
              class="mx-auto d-block"
              style="border-radius: 16px "
-             width="160" alt="dog2">
+             width="160">
         <p class="text-center"> 25 рублей за 1 раз</p>
       </div>
     </div>
   </div>
 </div>
 
-
-
-<h1>Калькулятор стоимости услуги</h1>
-
-<label for="quantity">Количество:</label>
-<input type="number" id="quantity" min="1" value="1" onchange="calculatePrice()"><br><br>
-
-<label>Погладить:</label><br>
-<input type="radio" name="serviceType" value="type1" onchange="calculatePrice()" checked> Только котик 1 <br>
-<input type="radio" name="serviceType" value="type2" onchange="calculatePrice()"> Только котик 2 <br>
-<input type="radio" name="serviceType" value="type3" onchange="calculatePrice()"> Только песик 1 <br>
-<input type="radio" name="serviceType" value="type4" onchange="calculatePrice()"> Только песик 2 <br>
-<input type="radio" name="serviceType" value="type5" onchange="calculatePrice()"> Котик+Песик <br><br>
-
-<label for="option">Опция товара:</label>
-<select id="option" onchange="calculatePrice()">
-  <option value="option0">ничего</option>
-  <option value="option1">купить лакомство</option>
-  <option value="option2">купить подстилку</option>
-  <option value="option3">купить игрушку</option>
-</select><br><br>
-
-<label for="property">Дружелюбный зверек</label>
-<input type="checkbox" id="property" onchange="calculatePrice()"><br><br>
-
-<div id="price">Цена: 0 руб.</div>
-
+<div class="container p-0">
+  <div class="row">
+    <main class="col">
+      <!--калькулятор-->
+      <div class="col-12 col-md-10 mx-auto d-flex flex-column justify-content align-items-center">
+        <h1>Калькулятор стоимости услуги</h1>
+        <label for="quantity">Количество:</label>
+        <input type="number" id="quantity" min="1" value="1" onchange="calculatePrice()"><br>
+        <label>Погладить:</label>
+        <div class="flex-row justify-content" >
+        <input type="radio" name="serviceType" value="type1" onchange="calculatePrice()" checked> Только котик 1 <br>
+        <input type="radio" name="serviceType" value="type2" onchange="calculatePrice()"> Только котик 2 <br>
+        <input type="radio" name="serviceType" value="type3" onchange="calculatePrice()"> Только песик 1 <br>
+        <input type="radio" name="serviceType" value="type4" onchange="calculatePrice()"> Только песик 2 <br>
+        <input type="radio" name="serviceType" value="type5" onchange="calculatePrice()"> Котик+Песик <br><br>
+        </div>
+        <div>
+        <label for="option">Опция товара:</label>
+        <select id="option" onchange="calculatePrice()">
+          <option value="option0">ничего</option>
+          <option value="option1">купить лакомство</option>
+          <option value="option2">купить подстилку</option>
+          <option value="option3">купить игрушку</option>
+        </select><br><br>
+      </div>
+        <div class="flex-row justify-content" >
+        <label for="property">Дружелюбный зверек</label>
+        <input type="checkbox" id="property" onchange="calculatePrice()"><br><br>
+        </div>
+        <div id="price">Цена: 0 руб.</div>
+      </div>
+    </main>
+  </div>
+</div>
 
 <footer>
   <div class="container">
