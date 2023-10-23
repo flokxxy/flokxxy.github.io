@@ -1,0 +1,33 @@
+.gallery-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery-slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.gallery-slider img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery-pager {
+  text-align: center;
+}
+
+.gallery-pager span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.gallery-pager span.active {
+  background-color: black;
+}
