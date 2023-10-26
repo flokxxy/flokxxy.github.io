@@ -9,6 +9,9 @@
   background-color: #192824;
   box-sizing: border-box;
 }
+html{
+  background-color: #192824;
+}
 
 footer{
   display: flex;
