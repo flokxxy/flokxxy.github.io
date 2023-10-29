@@ -85,9 +85,7 @@ img {
     flex-direction: column;
     justify-content:flex-end ;
 }
-.navigashin{
-    margin: 5px;
-}
+
 
 
 
@@ -139,6 +137,10 @@ th, td {
         top: 5px;
         position: absolute;
 
+    }
+
+    .navigashin a{
+    margin: 5px;
     }
     .link{
         display: flex;
