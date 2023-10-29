@@ -91,6 +91,7 @@ table {
     border: 5px solid #a4bebe;
     width: 500px;
     border-radius: 7px;
+    margin:4px;
 
     border-spacing: 0;
     border-collapse: collapse;
