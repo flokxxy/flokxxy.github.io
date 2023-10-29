@@ -85,6 +85,11 @@ img {
     flex-direction: column;
     justify-content:flex-end ;
 }
+.navigashin{
+    margin:3px;
+}
+
+
 
 th, td {
    border: 1px solid grey;
