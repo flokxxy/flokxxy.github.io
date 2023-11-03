@@ -1,0 +1,72 @@
+public class Money {
+    int ruble;
+    int kopeiki;
+
+    public Money(int ruble, int kopeiki) {
+        this.ruble = ruble;
+        this.kopeiki = kopeiki;
+    }
+
+    public int getRuble() {
+        return ruble;
+    }
+    public void setRuble(int ruble) {
+        this.ruble = ruble;
+    }
+    public int getKopeiki() {
+        return kopeiki;
+    }
+    public void setKopeiki(int kopeiki) {
+        this.kopeiki = kopeiki;
+    }
+
+    public  Money sum(Money m){
+        int r = this.ruble + m.getKopeiki()/100+m.getRuble();
+        int k = this.kopeiki + m.getKopeiki()%100;
+        return new Money(r, k);
+    }
+
+
+    public void print() {
+        System.out.println("У вас есть:");
+
+        if(ruble%10==3||ruble%10==1||ruble%10==4||ruble%10==2)  {
+            if(ruble==1) System.out.println(ruble+" рубль");
+              System.out.println(ruble+" рубля");
+        }
+        else System.out.println(ruble+" рублей");
+
+        if(kopeiki%10==2||kopeiki%10==3||kopeiki%10==4) {
+            if(kopeiki==1)   System.out.println(kopeiki+" копека");
+            else  System.out.println(kopeiki+" копейки");
+        }
+        else System.out.println(kopeiki+" копеек");
+    }
+}
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Введите сколько у вас рублей!");
+        int r= sc.nextInt();
+           System.out.println("Введите сколько у вас копеек!");
+        int k=sc.nextInt();
+        Money m1=new Money(r,k);
+
+           m1.print();
+
+        System.out.println("Введите прибавку рублей!");
+        r= sc.nextInt();
+           System.out.println("Введите прибавку копеек!");
+        k=sc.nextInt();
+        Money m2=new Money(r,k);
+
+
+        Money m=m1.sum(m2);
+        m.print();
+    }
+}
