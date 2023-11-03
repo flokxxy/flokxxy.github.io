@@ -40,10 +40,10 @@
   padding: 40px;
 }
 
-@media only screen and (max-width: 600px) {
-  .popup form {
-    max-height: 100vh;
-    overflow-y: auto;
+@media only screen and (max-width: 576px) {
+  .modal-dialog {
+    max-width: 100%;
+    margin: 0;
   }
 }
 
