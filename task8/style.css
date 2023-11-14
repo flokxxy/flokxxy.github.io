@@ -20,7 +20,8 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(17, 17, 17, 0.5);
+  background-color: rgba(17, 17, 17, 0.5);
+  /*background: rgba(17, 17, 17, 0.5);*/
   transition: all 0.5s ease;
   display: none;
   max-width: calc(100%);
