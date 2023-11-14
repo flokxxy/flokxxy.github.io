@@ -1,5 +1,6 @@
 .main_button{
   color: #eac5cc;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.89);
 }
 #main_button_center{ /*выравнивание главной кнопки по центру*/
   margin: 0;
