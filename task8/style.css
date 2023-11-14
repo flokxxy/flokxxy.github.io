@@ -7,6 +7,11 @@
 
 #blablabla.open {
   display: block;
+
+}
+
+.content{
+  max-width:calc(100%);
 }
 
 .container {
@@ -18,6 +23,7 @@
   background: rgba(17, 17, 17, 0.5);
   transition: all 0.5s ease;
   display: none;
+  max-width: calc(100%);
 }
 
 .popup_open {
@@ -34,22 +40,28 @@
   max-width: 588px;
   width: 100%;
   max-height: 100vh; /* Добавляем максимальную высоту равную высоте видимой области экрана */
-  overflow-y: auto; /* Добавляем вертикальную прокрутку при необходимости */
 }
 
 .popup__wrapper {
   padding: 40px;
 }
 
-/*
-@media only screen and (max-width: 576px) {
-  .modal-dialog {
-    max-width: 100%;
+
+@media only screen and (max-width: 760px) {
+  .popup__container {
+    display: flex;
+    justify-content: center;
+    max-width: 450px;
+    padding: 10px;
     margin: 0;
+  }
+  .popup__wrapper{
+  padding: 20px;
+
   }
 }
 
- */
+
 
 
 @keyframes fadeIn {
@@ -63,9 +75,8 @@
 
 
 .page_close{
-  height: 30px;
   width: 30px;
   position: absolute;
   top: 10%;
-  left:90%;
+  left: 90%;
 }
