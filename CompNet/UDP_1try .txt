@@ -9,8 +9,17 @@
 using namespace std;
 #define PORT 666    // порт сервера
 #define sHELLO "Hello, STUDENT\n"
+
+struct Person
+{
+    int grades[4];  //оценки
+    char name[500];  //имя
+}B;
+
 int main() {
+    setlocale(LC_ALL, "RUS");
     char buff[1024];
+    int answer = -1;
     cout << "UDP DEMO ECHO-SERVER\n";
     // шаг 1 - подключение библиотеки 
     if (WSAStartup(0x202, (WSADATA*)&buff[0]))
@@ -42,8 +51,7 @@ int main() {
     while (1) {
         sockaddr_in    Caddr;
         int Caddr_size = sizeof(Caddr);
-        int bsize = recvfrom(Lsock, &buff[0], sizeof(buff) - 1, 0,
-            (sockaddr*)&Caddr, &Caddr_size);
+        int bsize = recvfrom(Lsock, (char*)&B, sizeof(B), 0, (sockaddr*)&Caddr, &Caddr_size);
         if (bsize == SOCKET_ERROR)
             cout << "RECVFROM() ERROR:" << WSAGetLastError();
         // Определяем IP-адрес клиента и прочие атрибуты
@@ -53,10 +61,52 @@ int main() {
         cout << ((hst) ? hst->h_name : "Unknown host\n") << endl;
         cout << inet_ntoa(Caddr.sin_addr) << endl;
         cout << ntohs(Caddr.sin_port) << endl;
-        buff[bsize] = '\0';              // добавление завершающего нуля
-        cout << "C=>S:" << buff << '\n';        // Вывод на экран 
+        /* buff[bsize] = '\0';  */            // добавление завершающего нуля
+        cout << "Client => Server:"; /*<< buff << '\n';*/        // Вывод на экран 
+        cout << "Name:" << B.name << endl;
+        cout << "Grades: ";
+        for (int i = 0; i < 4; i++)
+            cout << B.grades[i] << " ";
+        cout << endl;
+        /*
+        if (B.grades[0] == 2 || B.grades[1] == 2 || B.grades[2] == 2 || B.grades[3] == 2) answer = 2;
+        else if (B.grades[0] == 3 || B.grades[1] == 3 || B.grades[2] == 3 || B.grades[3] == 3) answer = 3;
+        else if (B.grades[0] == 5 && B.grades[1] == 5 && B.grades[2] == 5 && B.grades[3] == 5) answer = 5;
+        else answer = 4;*/
+
+        //задолжности
+        if (B.grades[0] == 2) answer = 2;
+        else if (B.grades[1] == 2) answer = 3;
+        else if (B.grades[2] == 2) answer = 4;
+        else if (B.grades[3] == 2) answer = 5;
+        else if (B.grades[0] == 2 && B.grades[1] == 2 && B.grades[2] == 2 && B.grades[3] == 2) answer = 13;
+        //нет степендии
+        else if (B.grades[0] == 3) answer = 6;
+        else if (B.grades[1] == 3) answer = 7;
+        else if (B.grades[2] == 3) answer = 8;
+        else if (B.grades[3] == 3) answer = 9;
+        else if (B.grades[0] == 3 && B.grades[1] == 3 && B.grades[2] == 3 && B.grades[3] == 3) answer = 12;
+        //обычная степендия
+        else if (B.grades[0] == 5 && B.grades[1] == 5 && B.grades[2] == 5 && B.grades[3] == 5) answer = 10;
+        else  answer = 11;
+        switch (answer) {
+        case 2: {cout << "долг по программированию\n"; break; }
+        case 3: {cout << "долг по Математический анализ\n"; break; }
+        case 4: {cout << "долг по Дифференциальные уравнения\n"; break; }
+        case 5: {cout << "долг по Веб\n"; break; }
+        case 6: {cout << "нет стипендии из-за программированию\n"; break; }
+        case 7: {cout << "нет стипендии из-за Математический анализ\n"; break; }
+        case 8: {cout << "нет стипендии из-за Дифференциальные уравнения\n"; break; }
+        case 9: {cout << "нет стипендии из-за Веб\n"; break; }
+        case 10: {cout << "повышенная стипендия"; break; }
+        case 11: {cout << "обычная стипендия\n"; break; }
+        case 12: {cout << "нет стипендии\n"; break; }
+        case 13: {cout << "все очень плохо\n"; break; }
+
+        case -1: {cout << "Error, server sent wrong data"; }
+        }
         // посылка датаграммы клиенту
-        sendto(Lsock, &buff[0], bsize, 0, (sockaddr*)&Caddr, sizeof(Caddr));
+        sendto(Lsock, (char*)&answer, sizeof(answer), 0, (sockaddr*)&Caddr, sizeof(Caddr));
     }      return 0;
 }
 
@@ -76,9 +126,17 @@ using namespace std;
 #define PORT 666
 #define SERVERADDR "127.0.0.1" // IP-адрес сервера
 
+struct Person
+{
+    int grades[4];  //оценки
+    char name[500];  //имя
+} A;
+
 int main()
 {
+    setlocale(LC_ALL, "RUS");
     char buff[10 * 1014];
+    int answer = -1;
     cout << "UDP Demo Client\nType quit to quit \n";
     // Шаг 1 - иницилизация библиотеки Winsocks
     if (WSAStartup(0x202, (WSADATA*)&buff))
@@ -114,26 +172,50 @@ int main()
         }
     while (1) {
         // чтение сообщения с клавиатуры
-        cout << "S<=C:";
-        string SS;
+        cout << "Server <= Client:" << endl;
+        /*string SS;
         getline(cin, SS);
-        if (SS == "quit") break;
+        if (SS == "quit") break;*/
+        cout << "System: Введите данные: Фамилия Оценки(4 штуки)" << endl;
+        cout << "you:";
+        cin >> A.name;
+        cout << "input marks for " << endl;
+        cout << " Программирование || Математический анализ | Дифференциальные уравнения | Веб " << endl;
+        for (int i = 0; i < 4; i++)
+            cin >> A.grades[i];
+
         // Передача сообщений на сервер
-        sendto(my_sock, (char*)&SS[0], SS.size(), 0,
-            (sockaddr*)&Daddr, sizeof(Daddr));
+        sendto(my_sock, (char*)&A, sizeof(A), 0, (sockaddr*)&Daddr, sizeof(Daddr));
+
         // Прием сообщения с сервера
         sockaddr_in SRaddr;
         int SRaddr_size = sizeof(SRaddr);
-        int n = recvfrom(my_sock, buff, sizeof(buff), 0,
-            (sockaddr*)&SRaddr, &SRaddr_size);
+        int n = recvfrom(my_sock, (char*)&answer, sizeof(answer), 0, (sockaddr*)&SRaddr, &SRaddr_size);
         if (n == SOCKET_ERROR) {
             cout << "RECVFROM() ERROR:" << WSAGetLastError() << "\n";
             closesocket(my_sock);
             WSACleanup();  return -1;
         }
         buff[n] = '\0';
+
         // Вывод принятого с сервера сообщения на экран
-        cout << "S=>C:" << buff << "\n";
+        cout << "Server => Client:";
+        switch (answer) {
+        case 2: {cout << "долг по программированию\n"; break; }
+        case 3: {cout << "долг по Математический анализ\n"; break; }
+        case 4: {cout << "долг по Дифференциальные уравнения\n"; break; }
+        case 5: {cout << "долг по Веб\n"; break; }
+        case 6: {cout << "нет стипендии из-за программированию\n"; break; }
+        case 7: {cout << "нет стипендии из-за Математический анализ\n"; break; }
+        case 8: {cout << "нет стипендии из-за Дифференциальные уравнения\n"; break; }
+        case 9: {cout << "нет стипендии из-за Веб\n"; break; }
+        case 10: {cout << "повышенная стипендия"; break; }
+        case 11: {cout << "обычная стипендия\n"; break; }
+        case 12: {cout << "нет стипендии\n"; break; }
+        case 13: {cout << "все очень плохо\n"; break; }
+
+        case -1: {cout << "Error, server sent wrong data"; }
+        }
     }
     // шаг последний - выход
     closesocket(my_sock);
